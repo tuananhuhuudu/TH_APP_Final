@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['fullName', 'email'])"
+      }
+    },
+
+    "chats": {
+      ".read": "auth != null",
+      "$chatId": {
+        ".write": "auth != null && $chatId.contains(auth.uid)",
+        "members": {
+          "$uid": {
+            ".validate": "newData.isBoolean()"
+          }
+        },
+        "unread": {
+          "$uid": {
+            ".validate": "newData.isNumber() && newData.val() >= 0"
+          }
+        }
+      }
+    },
+
+    "messages": {
+      "$chatId": {
+        ".read": "auth != null && $chatId.contains(auth.uid)",
+        ".write": "auth != null && $chatId.contains(auth.uid)",
+        "$messageId": {
+          ".validate": "newData.hasChildren(['senderId', 'type', 'createdAt'])",
+          "senderId": {
+            ".validate": "newData.val() === auth.uid"
+          },
+          "type": {
+            ".validate": "newData.val() === 'text' || newData.val() === 'location'"
+          }
+        }
+      }
+    }
+  }
+}

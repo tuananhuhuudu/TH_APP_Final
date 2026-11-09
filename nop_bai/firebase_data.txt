@@ -1,0 +1,172 @@
+================================================================
+  DU LIEU FIREBASE REALTIME DATABASE - project: th-app-chat
+  Xuat luc: 09/11/2026 17:47:11
+  URL: https://th-app-chat-default-rtdb.asia-southeast1.firebasedatabase.app
+================================================================
+
+### /users (danh sach nguoi dung da dang ky)
+{
+  "MYYeLkiuPced4M7IpswSdNrmHRB2" : {
+    "createdAt" : 1794218256306,
+    "email" : "binh@test.com",
+    "fullName" : "Tran Thi Binh",
+    "lastSeen" : 1794220692366,
+    "online" : true,
+    "uid" : "MYYeLkiuPced4M7IpswSdNrmHRB2"
+  },
+  "PsWDyN4te3XI5YG87T19yFXNSpM2" : {
+    "createdAt" : 1794218215271,
+    "email" : "an@test.com",
+    "fullName" : "Nguyen Van An",
+    "lastSeen" : 1794220152543,
+    "online" : true,
+    "uid" : "PsWDyN4te3XI5YG87T19yFXNSpM2"
+  }
+}
+
+### /chats (tom tat hoi thoai)
+{
+  "MYYeLkiuPced4M7IpswSdNrmHRB2_PsWDyN4te3XI5YG87T19yFXNSpM2" : {
+    "lastMessage" : "Tin nhan moi so 3",
+    "lastMessageAt" : 1794220161258,
+    "lastSenderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "members" : {
+      "MYYeLkiuPced4M7IpswSdNrmHRB2" : true,
+      "PsWDyN4te3XI5YG87T19yFXNSpM2" : true
+    },
+    "unread" : {
+      "MYYeLkiuPced4M7IpswSdNrmHRB2" : 0,
+      "PsWDyN4te3XI5YG87T19yFXNSpM2" : 0
+    }
+  }
+}
+
+### /messages/MYYeLkiuPced4M7IpswSdNrmHRB2_PsWDyN4te3XI5YG87T19yFXNSpM2 (tin nhan)
+{
+  "-P5zljzFEeF12rL-Y4S7" : {
+    "createdAt" : 1794218852304,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Test rules",
+    "type" : "text"
+  },
+  "live1" : {
+    "createdAt" : 1794219641812,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Tin realtime 2 may!",
+    "type" : "text"
+  },
+  "loc1" : {
+    "createdAt" : 1794219055236,
+    "latitude" : 21.0049,
+    "longitude" : 105.8441,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Vi tri cua toi",
+    "type" : "location"
+  },
+  "msgB1" : {
+    "createdAt" : 1794218883834,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Chao An nhe!",
+    "type" : "text"
+  },
+  "nb1" : {
+    "createdAt" : 1794220156725,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin nhan moi so 1",
+    "type" : "text"
+  },
+  "nb2" : {
+    "createdAt" : 1794220158972,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin nhan moi so 2",
+    "type" : "text"
+  },
+  "nb3" : {
+    "createdAt" : 1794220161258,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin nhan moi so 3",
+    "type" : "text"
+  },
+  "r1" : {
+    "createdAt" : 1794219927842,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Xin chao, day la demo realtime",
+    "type" : "text"
+  },
+  "r2" : {
+    "createdAt" : 1794219935149,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Minh nhan duoc ngay lap tuc",
+    "type" : "text"
+  },
+  "r3" : {
+    "createdAt" : 1794219942587,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Khong can tai lai man hinh",
+    "type" : "text"
+  },
+  "r4" : {
+    "createdAt" : 1794219949938,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Firebase Realtime Database that tuyet",
+    "type" : "text"
+  },
+  "rloc" : {
+    "createdAt" : 1794219968139,
+    "latitude" : 21.0049,
+    "longitude" : 105.8441,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Vi tri cua toi",
+    "type" : "location"
+  },
+  "unread1" : {
+    "createdAt" : 1794218979198,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin chua doc so 1",
+    "type" : "text"
+  },
+  "unread2" : {
+    "createdAt" : 1794218981656,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin chua doc so 2",
+    "type" : "text"
+  },
+  "unread3" : {
+    "createdAt" : 1794218983907,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Tin chua doc so 3",
+    "type" : "text"
+  },
+  "v1" : {
+    "createdAt" : 1794219812969,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Chao Binh, ban khoe khong?",
+    "type" : "text"
+  },
+  "v2" : {
+    "createdAt" : 1794219819347,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Minh khoe, cam on ban!",
+    "type" : "text"
+  },
+  "v3" : {
+    "createdAt" : 1794219825706,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Tin nhan hien ngay lap tuc nhi",
+    "type" : "text"
+  },
+  "v4" : {
+    "createdAt" : 1794219832086,
+    "senderId" : "MYYeLkiuPced4M7IpswSdNrmHRB2",
+    "text" : "Dung roi, realtime that su!",
+    "type" : "text"
+  },
+  "vloc" : {
+    "createdAt" : 1794219850359,
+    "latitude" : 21.0049,
+    "longitude" : 105.8441,
+    "senderId" : "PsWDyN4te3XI5YG87T19yFXNSpM2",
+    "text" : "Vi tri cua toi",
+    "type" : "location"
+  }
+}
